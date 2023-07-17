@@ -1,0 +1,38 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="answer1" src="project://database/Assets/UI%20Toolkit/answer1.uxml?fileID=9197481963319205126&amp;guid=08bf0986988aefe448ebca770d939602&amp;type=3#answer1" />
+    <ui:Template name="answer2" src="project://database/Assets/UI%20Toolkit/answer2.uxml?fileID=9197481963319205126&amp;guid=5499f09865a8d3d469947ad9fffaab9d&amp;type=3#answer2" />
+    <ui:Template name="answer3" src="project://database/Assets/UI%20Toolkit/answer3.uxml?fileID=9197481963319205126&amp;guid=1d9d9c887c826104fb2cd1368471bbaa&amp;type=3#answer3" />
+    <ui:Template name="answer4" src="project://database/Assets/UI%20Toolkit/answer4.uxml?fileID=9197481963319205126&amp;guid=4bcb166ecd98c3c4dbc1cafd23e8e096&amp;type=3#answer4" />
+    <ui:Template name="answer5" src="project://database/Assets/UI%20Toolkit/answer5.uxml?fileID=9197481963319205126&amp;guid=e0937ebfa3475684b8423c9ec39f43cf&amp;type=3#answer5" />
+    <ui:Template name="answer6" src="project://database/Assets/UI%20Toolkit/answer6.uxml?fileID=9197481963319205126&amp;guid=0b26e754e70cad94fb1b805a9f14926b&amp;type=3#answer6" />
+    <ui:Template name="answer7" src="project://database/Assets/UI%20Toolkit/answer7.uxml?fileID=9197481963319205126&amp;guid=a5a1dc68d639c464286f64fe6668af5b&amp;type=3#answer7" />
+    <ui:Template name="answer8" src="project://database/Assets/UI%20Toolkit/answer8.uxml?fileID=9197481963319205126&amp;guid=b80cbf23e473a104cabe94b3d3a88d1d&amp;type=3#answer8" />
+    <ui:Template name="answer9" src="project://database/Assets/UI%20Toolkit/answer9.uxml?fileID=9197481963319205126&amp;guid=0081237023c6ff843b9d9d6eae1b1104&amp;type=3#answer9" />
+    <ui:Template name="answer10" src="project://database/Assets/UI%20Toolkit/answer10.uxml?fileID=9197481963319205126&amp;guid=2b4dd3b9ed07f6349b2e5ccaed944349&amp;type=3#answer10" />
+    <ui:Template name="answer11" src="project://database/Assets/UI%20Toolkit/answer11.uxml?fileID=9197481963319205126&amp;guid=bfb8f96abc429b942a95003128dfb714&amp;type=3#answer11" />
+    <ui:Template name="answer12" src="project://database/Assets/UI%20Toolkit/answer12.uxml?fileID=9197481963319205126&amp;guid=e372a72f19bdf804e84990186f1a8ce3&amp;type=3#answer12" />
+    <ui:Template name="answer13" src="project://database/Assets/UI%20Toolkit/answer13.uxml?fileID=9197481963319205126&amp;guid=52e180353c7cd6c4c8e1f0f8abba4fe0&amp;type=3#answer13" />
+    <ui:Template name="answer14" src="project://database/Assets/UI%20Toolkit/answer14.uxml?fileID=9197481963319205126&amp;guid=7a6417070153bb043b016433803ac0f0&amp;type=3#answer14" />
+    <ui:Template name="answer15" src="project://database/Assets/UI%20Toolkit/answer15.uxml?fileID=9197481963319205126&amp;guid=a142146e347c0c34896f4ff82d9c6663&amp;type=3#answer15" />
+    <ui:Template name="answer16" src="project://database/Assets/UI%20Toolkit/answer16.uxml?fileID=9197481963319205126&amp;guid=025ae835915fb564195860580348040e&amp;type=3#answer16" />
+    <ui:Template name="answer17" src="project://database/Assets/UI%20Toolkit/answer17.uxml?fileID=9197481963319205126&amp;guid=5a8d3112d7eb89d43a117c5667a67d2e&amp;type=3#answer17" />
+    <ui:Template name="answer18" src="project://database/Assets/UI%20Toolkit/answer18.uxml?fileID=9197481963319205126&amp;guid=c18af3c101fd5f240a41e14f673b8191&amp;type=3#answer18" />
+    <ui:Instance template="answer1" name="answer1" style="position: absolute; width: 100%; height: 100%;" />
+    <ui:Instance template="answer2" name="answer2" style="width: 100%; height: 100%; position: absolute;" />
+    <ui:Instance template="answer3" name="answer3" style="position: absolute; width: 100%; height: 100%;" />
+    <ui:Instance template="answer4" name="answer4" style="position: absolute; width: 100%; height: 100%;" />
+    <ui:Instance template="answer5" name="answer5" style="position: absolute; width: 100%; height: 100%;" />
+    <ui:Instance template="answer6" name="answer6" style="position: absolute; width: 100%; height: 100%;" />
+    <ui:Instance template="answer7" name="answer7" style="position: absolute; width: 100%; height: 100%;" />
+    <ui:Instance template="answer8" name="answer8" style="position: absolute; width: 100%; height: 100%;" />
+    <ui:Instance template="answer9" name="answer9" style="position: absolute; width: 100%; height: 100%;" />
+    <ui:Instance template="answer10" name="answer10" style="position: absolute; width: 100%; height: 100%;" />
+    <ui:Instance template="answer11" name="answer11" style="position: absolute; width: 100%; height: 100%;" />
+    <ui:Instance template="answer12" name="answer12" style="position: absolute; width: 100%; height: 100%;" />
+    <ui:Instance template="answer13" name="answer13" style="position: absolute; height: 100%; width: 100%;" />
+    <ui:Instance template="answer14" name="answer14" style="position: absolute; width: 100%; height: 100%;" />
+    <ui:Instance template="answer15" name="answer15" style="position: absolute; width: 100%; height: 100%;" />
+    <ui:Instance template="answer16" name="answer16" style="position: absolute; width: 100%; height: 100%;" />
+    <ui:Instance template="answer17" name="answer17" style="position: absolute; width: 100%; height: 100%;" />
+    <ui:Instance template="answer18" name="answer18" style="position: absolute; width: 100%; height: 100%;" />
+</ui:UXML>

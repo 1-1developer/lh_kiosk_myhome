@@ -1,0 +1,24 @@
+.MapBt {
+    position: absolute;
+    top: 233px;
+    left: 1320px;
+    background-image: url('project://database/Assets/resourse/image/map/map_bt10.png?fileID=2800000&guid=76dc1ff104830844089ab0c34eeb331b&type=3#map_bt10');
+    background-color: rgba(88, 88, 88, 0);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    width: 60px;
+    height: 61px;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.MapBt:hover {
+    -unity-background-image-tint-color: rgb(183, 223, 224);
+    scale: 0.9 0.9;
+}
+
+.MapBt:focus {
+    scale: 1.5 1.5;
+    transition-duration: 0.2s;
+}
