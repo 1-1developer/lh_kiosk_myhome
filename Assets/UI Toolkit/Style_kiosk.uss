@@ -22,3 +22,39 @@
     scale: 1.5 1.5;
     transition-duration: 0.2s;
 }
+
+.TopBt {
+    height: 95px;
+    width: 146px;
+    background-color: rgba(88, 88, 88, 0);
+    border-left-color: rgba(255, 255, 255, 0);
+    border-right-color: rgba(255, 255, 255, 0);
+    border-top-color: rgba(255, 255, 255, 0);
+    border-bottom-color: rgba(255, 255, 255, 0);
+    background-image: url('project://database/Assets/resourse/image/map/map_bt0.png?fileID=2800000&guid=3920404d92672e149bebefbbf329e7aa&type=3#map_bt0');
+    -unity-background-scale-mode: scale-to-fit;
+    left: 1477px;
+}
+
+.TopBt:active {
+    scale: 0.9 0.9;
+}
+
+.MapBt_Way {
+    height: 73px;
+    width: 231px;
+    background-color: rgba(88, 88, 88, 0);
+    border-left-color: rgba(255, 255, 255, 0);
+    border-right-color: rgba(255, 255, 255, 0);
+    border-top-color: rgba(255, 255, 255, 0);
+    border-bottom-color: rgba(255, 255, 255, 0);
+    background-image: url('project://database/Assets/resourse/image/map/map_bt6.png?fileID=2800000&guid=c15a37e308ddc414eb449658dbaaff11&type=3#map_bt6');
+    -unity-background-scale-mode: scale-and-crop;
+    left: 79px;
+    position: absolute;
+    top: 110px;
+}
+
+.MapBt_Way:active {
+    scale: 0.9 0.9;
+}

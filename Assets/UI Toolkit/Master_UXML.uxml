@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="main" src="project://database/Assets/UI%20Toolkit/main.uxml?fileID=9197481963319205126&amp;guid=da5139f3a091c44449fe4349a4fc904c&amp;type=3#main" />
+    <ui:Template name="map" src="project://database/Assets/UI%20Toolkit/map.uxml?fileID=9197481963319205126&amp;guid=67bec79dbedf8f44fb4d5aa5acce869c&amp;type=3#map" />
+    <ui:Instance template="main" name="main" style="position: absolute; width: 100%; height: 100%;" />
+    <ui:Instance template="map" name="map" style="position: absolute; width: 100%; height: 100%;" />
+</ui:UXML>
