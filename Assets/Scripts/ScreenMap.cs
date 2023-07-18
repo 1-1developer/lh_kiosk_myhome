@@ -32,12 +32,11 @@ public class ScreenMap : MenuScreen
     Button m_dataBTb;//추정분양가
 
     Button m_dataCloseBt;//닫기
+    Button m_homeBt;//홈버튼
 
     List<Button> m_Pointers = new List<Button>();
     List<Button> m_Mapbt = new List<Button>();
     List<VisualElement> m_pointGroups = new List<VisualElement>();
-
-    LineDrawer ld;
 
     int Dataindex;
     int topindex;
@@ -56,14 +55,15 @@ public class ScreenMap : MenuScreen
         m_DataBox = m_Root.Q<VisualElement>(DATABOX);
         m_DataE = m_Root.Q<VisualElement>(DATAE);
 
-        m_dataBTa = m_Root.Q<Button>(MAPBT + "4");
-        m_dataBTb= m_Root.Q<Button>(MAPBT + "5");
+        m_dataBTa = m_Root.Q<Button>(MAPBT + "5");
+        m_dataBTb= m_Root.Q<Button>(MAPBT + "4");
         m_dataCloseBt = m_Root.Q<Button>(DATACLOSEBT);
+
+        m_homeBt = m_Root.Q<Button>("btHome_Map");
 
         for (int i = 0; i < 18; i++)
         {
             m_Pointers.Add(m_Root.Q<Button>(MAPPOINT + $"{i}"));
-            m_Pointers[i].RegisterCallback<ClickEvent>(evt => OnPointerClicked(i));
         }
 
         m_pointGroups.Add(m_Root.Q<VisualElement>("PG_nanum"));
@@ -78,10 +78,36 @@ public class ScreenMap : MenuScreen
         m_dataCloseBt.RegisterCallback<ClickEvent>(OnCloseClicked);
         m_dataBTa.RegisterCallback<ClickEvent>(evt => OnDataBTClicked(0));
         m_dataBTb.RegisterCallback<ClickEvent>(evt => OnDataBTClicked(1));
+
+        m_Pointers[0].RegisterCallback<ClickEvent>(evt => OnPointerClicked(0));
+        m_Pointers[1].RegisterCallback<ClickEvent>(evt => OnPointerClicked(1));
+        m_Pointers[2].RegisterCallback<ClickEvent>(evt => OnPointerClicked(2));
+        m_Pointers[3].RegisterCallback<ClickEvent>(evt => OnPointerClicked(3));
+        m_Pointers[4].RegisterCallback<ClickEvent>(evt => OnPointerClicked(4));
+        m_Pointers[5].RegisterCallback<ClickEvent>(evt => OnPointerClicked(5));
+        m_Pointers[6].RegisterCallback<ClickEvent>(evt => OnPointerClicked(6));
+        m_Pointers[7].RegisterCallback<ClickEvent>(evt => OnPointerClicked(7));
+        m_Pointers[8].RegisterCallback<ClickEvent>(evt => OnPointerClicked(8));
+        m_Pointers[9].RegisterCallback<ClickEvent>(evt => OnPointerClicked(9));
+        m_Pointers[10].RegisterCallback<ClickEvent>(evt => OnPointerClicked(10));
+        m_Pointers[11].RegisterCallback<ClickEvent>(evt => OnPointerClicked(11));
+        m_Pointers[12].RegisterCallback<ClickEvent>(evt => OnPointerClicked(12));
+        m_Pointers[13].RegisterCallback<ClickEvent>(evt => OnPointerClicked(13));
+        m_Pointers[12].RegisterCallback<ClickEvent>(evt => OnPointerClicked(12));
+        m_Pointers[12].RegisterCallback<ClickEvent>(evt => OnPointerClicked(12));
+
+        m_homeBt.RegisterCallback<ClickEvent>(OnHomeClicked);
     }
+
+    private void OnHomeClicked(ClickEvent evt)
+    {
+        m_MainMenuUIManager.ShowHomeScreen();
+    }
+
     private void OnCloseClicked(ClickEvent evt)
     {
         m_DataBox.style.display = DisplayStyle.None;
+        m_MapchartBox.style.display = DisplayStyle.Flex;
     }
 
     private void OnTopbtCilcked(int index)

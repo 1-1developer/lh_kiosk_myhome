@@ -38,6 +38,7 @@
 
 .TopBt:active {
     scale: 0.9 0.9;
+    transition-duration: 0.1s;
 }
 
 .MapBt_Way {
@@ -57,4 +58,50 @@
 
 .MapBt_Way:active {
     scale: 0.9 0.9;
+    transition-duration: 0.1s;
+}
+
+.HomeBt {
+    position: absolute;
+    height: 85px;
+    width: 85px;
+    top: 522px;
+    left: 1804px;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    background-color: rgba(88, 88, 88, 0);
+    background-image: url('project://database/Assets/resourse/image/map/map_back.png?fileID=2800000&guid=e5ca12ab40b439342aab7be33f11cd66&type=3#map_back');
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.MainBt {
+    width: 612px;
+    height: 155px;
+    -unity-text-align: middle-center;
+    white-space: nowrap;
+    background-image: url('project://database/Assets/resourse/image/main/main_bt1.png?fileID=2800000&guid=7e734237fde2289418965e3626dbc9d4&type=3#main_bt1');
+    -unity-background-scale-mode: scale-to-fit;
+    position: absolute;
+    background-color: rgba(88, 88, 88, 0);
+    align-items: auto;
+    flex-direction: column;
+    top: 634px;
+    left: 300px;
+    border-left-color: rgba(255, 255, 255, 0);
+    border-right-color: rgba(255, 255, 255, 0);
+    border-top-color: rgba(255, 255, 255, 0);
+    border-bottom-color: rgba(255, 255, 255, 0);
+    transition-duration: 0.1s;
+}
+
+.MainBt:active {
+    scale: 1.2 1.2;
+    transition-duration: 0.1s;
+}
+
+.HomeBt:active {
+    transition-duration: 0.1s;
+    scale: 1.2 1.2;
 }

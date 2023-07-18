@@ -10,6 +10,8 @@ public class UImanager : MonoBehaviour
     [Tooltip("Only one modal interface can appear on-screen at a time.")]
     [SerializeField] ScreenMain m_HomeModalScreen;
     [SerializeField] ScreenMap m_MapModalScreen;
+    [SerializeField] ScreenQuiz m_QuizModalScreen;
+    [SerializeField] ScreenAnswers m_AnswersModalScreen;
 
     UIDocument m_MainMenuDocument;
     public UIDocument MainMenuDocument => m_MainMenuDocument;
@@ -21,7 +23,10 @@ public class UImanager : MonoBehaviour
             m_AllModalScreens.Add(m_HomeModalScreen);
         if (m_MapModalScreen != null)
             m_AllModalScreens.Add(m_MapModalScreen);
-
+        if (m_QuizModalScreen != null)
+            m_AllModalScreens.Add(m_QuizModalScreen);
+        if (m_AnswersModalScreen != null)
+            m_AllModalScreens.Add(m_AnswersModalScreen);
     }
     void ShowModalScreen(MenuScreen modalScreen)
     {
@@ -51,5 +56,14 @@ public class UImanager : MonoBehaviour
     public void ShowMapScreen()
     {
         ShowModalScreen(m_MapModalScreen);
+    }
+    public void ShowQuizScreen()
+    {
+        ShowModalScreen(m_QuizModalScreen);
+    }
+
+    public void ShowAnswersScreen()
+    {
+        ShowModalScreen(m_AnswersModalScreen);
     }
 }

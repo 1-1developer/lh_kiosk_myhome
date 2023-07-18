@@ -20,14 +20,17 @@ public class ScreenMain : MenuScreen
         mainbt2 = m_Root.Q<Button>(MAINBT2);
 
         mainbt1.RegisterCallback<ClickEvent>(onMain1Clicked);
-        mainbt2.RegisterCallback<ClickEvent>(onMain1Clicked);
+        mainbt2.RegisterCallback<ClickEvent>(onMain2Clicked);
     }
 
     private void onMain1Clicked(ClickEvent evt)
     {
-        
+        m_MainMenuUIManager.ShowQuizScreen();
     }
-
+    private void onMain2Clicked(ClickEvent evt)
+    {
+        m_MainMenuUIManager.ShowMapScreen();
+    }
     void Start()
     {
 

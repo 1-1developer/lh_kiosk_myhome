@@ -1,6 +1,11 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <ui:Template name="main" src="project://database/Assets/UI%20Toolkit/main.uxml?fileID=9197481963319205126&amp;guid=da5139f3a091c44449fe4349a4fc904c&amp;type=3#main" />
-    <ui:Template name="map" src="project://database/Assets/UI%20Toolkit/map.uxml?fileID=9197481963319205126&amp;guid=67bec79dbedf8f44fb4d5aa5acce869c&amp;type=3#map" />
-    <ui:Instance template="main" name="main" style="position: absolute; width: 100%; height: 100%;" />
-    <ui:Instance template="map" name="map" style="position: absolute; width: 100%; height: 100%;" />
+    <ui:Template name="main" src="project://database/Assets/UI%20Toolkit/ScreenMain.uxml?fileID=9197481963319205126&amp;guid=da5139f3a091c44449fe4349a4fc904c&amp;type=3#ScreenMain" />
+    <ui:Template name="map" src="project://database/Assets/UI%20Toolkit/ScreenMap.uxml?fileID=9197481963319205126&amp;guid=67bec79dbedf8f44fb4d5aa5acce869c&amp;type=3#ScreenMap" />
+    <ui:Template name="ScreenQuiz" src="project://database/Assets/UI%20Toolkit/ScreenQuiz.uxml?fileID=9197481963319205126&amp;guid=2aae7737491a2cc44af0bcf04023597e&amp;type=3#ScreenQuiz" />
+    <ui:Template name="ScreenAnswers" src="project://database/Assets/UI%20Toolkit/ScreenAnswers.uxml?fileID=9197481963319205126&amp;guid=e8702d7270978c34abf21dd368da560e&amp;type=3#ScreenAnswers" />
+    <Style src="project://database/Assets/UI%20Toolkit/Style_kiosk.uss?fileID=7433441132597879392&amp;guid=0ff8e7a0e3cc2794db172d5e1a6bae66&amp;type=3#Style_kiosk" />
+    <ui:Instance template="main" name="ScreenMain" style="position: absolute; width: 100%; height: 100%;" />
+    <ui:Instance template="map" name="ScreenMap" style="position: absolute; width: 100%; height: 100%; display: none;" />
+    <ui:Instance template="ScreenQuiz" name="ScreenQuiz" style="display: none; width: 100%; height: 100%; position: absolute;" />
+    <ui:Instance template="ScreenAnswers" name="ScreenAnswers" style="position: absolute; width: 100%; height: 100%; display: none;" />
 </ui:UXML>
