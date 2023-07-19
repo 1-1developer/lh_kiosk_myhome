@@ -8,11 +8,10 @@ public class ScreenMain : MenuScreen
 {
     const string MAINBT1 = "mainbt1";
     const string MAINBT2 = "mainbt2";
-
+    [SerializeField]
+    InitTimer initTimer;
     Button mainbt1;
     Button mainbt2;
-
-    LineDrawer ld;
     protected override void SetVisualElements()
     {
         base.SetVisualElements();
@@ -25,10 +24,14 @@ public class ScreenMain : MenuScreen
 
     private void onMain1Clicked(ClickEvent evt)
     {
+        initTimer.isStart = true;
+        AudioManager.PlayDefaultButtonSound();
         m_MainMenuUIManager.ShowQuizScreen();
     }
     private void onMain2Clicked(ClickEvent evt)
     {
+        initTimer.isStart = true;
+        AudioManager.PlayDefaultButtonSound();
         m_MainMenuUIManager.ShowMapScreen();
     }
     void Start()

@@ -1,5 +1,5 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <ui:VisualElement name="answer_bg" style="width: 100%; height: 100%; background-color: rgb(255, 255, 255); background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_bg.png?fileID=2800000&amp;guid=e44365fb0a7a6c34f9a928e5bfe3674a&amp;type=3#answer_bg&apos;);">
-        <ui:VisualElement name="answer3" style="width: 100%; height: 100%; background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_4.png?fileID=2800000&amp;guid=0dda8ac8124ca474599d9dc677ed7067&amp;type=3#answer_4&apos;);" />
+        <ui:VisualElement name="answer13" style="width: 100%; height: 100%; background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_14.png?fileID=2800000&amp;guid=5fde7858bab1c424e82bcf9f35331660&amp;type=3#answer_14&apos;);" />
     </ui:VisualElement>
 </ui:UXML>

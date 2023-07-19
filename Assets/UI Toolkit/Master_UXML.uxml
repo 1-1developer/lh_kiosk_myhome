@@ -3,9 +3,11 @@
     <ui:Template name="map" src="project://database/Assets/UI%20Toolkit/ScreenMap.uxml?fileID=9197481963319205126&amp;guid=67bec79dbedf8f44fb4d5aa5acce869c&amp;type=3#ScreenMap" />
     <ui:Template name="ScreenQuiz" src="project://database/Assets/UI%20Toolkit/ScreenQuiz.uxml?fileID=9197481963319205126&amp;guid=2aae7737491a2cc44af0bcf04023597e&amp;type=3#ScreenQuiz" />
     <ui:Template name="ScreenAnswers" src="project://database/Assets/UI%20Toolkit/ScreenAnswers.uxml?fileID=9197481963319205126&amp;guid=e8702d7270978c34abf21dd368da560e&amp;type=3#ScreenAnswers" />
+    <ui:Template name="ScreenAllAnswer" src="project://database/Assets/UI%20Toolkit/ScreenAllAnswer.uxml?fileID=9197481963319205126&amp;guid=c83cff32ec75e4445867f22aeee2dcaf&amp;type=3#ScreenAllAnswer" />
     <Style src="project://database/Assets/UI%20Toolkit/Style_kiosk.uss?fileID=7433441132597879392&amp;guid=0ff8e7a0e3cc2794db172d5e1a6bae66&amp;type=3#Style_kiosk" />
-    <ui:Instance template="main" name="ScreenMain" style="position: absolute; width: 100%; height: 100%;" />
+    <ui:Instance template="main" name="ScreenMain" style="position: absolute; width: 100%; height: 100%; display: flex;" />
     <ui:Instance template="map" name="ScreenMap" style="position: absolute; width: 100%; height: 100%; display: none;" />
     <ui:Instance template="ScreenQuiz" name="ScreenQuiz" style="display: none; width: 100%; height: 100%; position: absolute;" />
     <ui:Instance template="ScreenAnswers" name="ScreenAnswers" style="position: absolute; width: 100%; height: 100%; display: none;" />
+    <ui:Instance template="ScreenAllAnswer" name="ScreenAllAnswer" style="background-color: rgb(112, 112, 112); position: absolute; width: 100%; height: 100%; display: none;" />
 </ui:UXML>

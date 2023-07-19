@@ -61,7 +61,7 @@ public class ScreenMap : MenuScreen
 
         m_homeBt = m_Root.Q<Button>("btHome_Map");
 
-        for (int i = 0; i < 18; i++)
+        for (int i = 0; i < 19; i++)
         {
             m_Pointers.Add(m_Root.Q<Button>(MAPPOINT + $"{i}"));
         }
@@ -93,32 +93,43 @@ public class ScreenMap : MenuScreen
         m_Pointers[11].RegisterCallback<ClickEvent>(evt => OnPointerClicked(11));
         m_Pointers[12].RegisterCallback<ClickEvent>(evt => OnPointerClicked(12));
         m_Pointers[13].RegisterCallback<ClickEvent>(evt => OnPointerClicked(13));
-        m_Pointers[12].RegisterCallback<ClickEvent>(evt => OnPointerClicked(12));
-        m_Pointers[12].RegisterCallback<ClickEvent>(evt => OnPointerClicked(12));
+        m_Pointers[14].RegisterCallback<ClickEvent>(evt => OnPointerClicked(14));
+        m_Pointers[15].RegisterCallback<ClickEvent>(evt => OnPointerClicked(15));
+        m_Pointers[16].RegisterCallback<ClickEvent>(evt => OnPointerClicked(16));
+        m_Pointers[17].RegisterCallback<ClickEvent>(evt => OnPointerClicked(17));
+        m_Pointers[18].RegisterCallback<ClickEvent>(evt => OnPointerClicked(18));
+
 
         m_homeBt.RegisterCallback<ClickEvent>(OnHomeClicked);
     }
 
     private void OnHomeClicked(ClickEvent evt)
     {
+        AudioManager.PlayDefaultButtonSound();
         m_MainMenuUIManager.ShowHomeScreen();
     }
 
     private void OnCloseClicked(ClickEvent evt)
     {
+        AudioManager.PlayDefaultButtonSound();
         m_DataBox.style.display = DisplayStyle.None;
         m_MapchartBox.style.display = DisplayStyle.Flex;
     }
 
     private void OnTopbtCilcked(int index)
     {
+        StyleTopBt(index);
+        AudioManager.PlayDefaultButtonSound();
         topindex = index;
         showPointG(m_pointGroups[topindex]);
         m_Mapchart.style.backgroundImage = charts[topindex + 1].texture;
+        m_DataBox.style.display = DisplayStyle.None;
+        m_MapchartBox.style.display = DisplayStyle.Flex;
     }
 
     void OnPointerClicked(int index)
     {
+        AudioManager.PlayDefaultButtonSound();
         m_MapchartBox.style.display = DisplayStyle.None;
         m_DataBox.style.display = DisplayStyle.Flex;
         switch (Dataindex)
@@ -137,6 +148,7 @@ public class ScreenMap : MenuScreen
 
     void OnDataBTClicked(int index)
     {
+        AudioManager.PlayDefaultButtonSound();
         Dataindex = index;
         switch (index)
         {
@@ -162,6 +174,18 @@ public class ScreenMap : MenuScreen
             {
                 a.style.display = DisplayStyle.None;
             }
+        }
+    }
+
+    void StyleTopBt(int index)
+    {
+        Button bb = m_Mapbt[index];
+        foreach (Button b in m_Mapbt)
+        {
+            if (bb == b)
+                b.RemoveFromClassList("TopBt--un");
+            else
+                b.AddToClassList("TopBt--un");
         }
     }
 }

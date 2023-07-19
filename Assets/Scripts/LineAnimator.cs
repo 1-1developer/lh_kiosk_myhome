@@ -45,9 +45,4 @@ public class LineAnimator : MonoBehaviour
             }
         }
     }
-
-    void Update()
-    {
-        
-    }
 }

@@ -25,15 +25,27 @@
 
 .TopBt {
     height: 95px;
-    width: 146px;
-    background-color: rgba(88, 88, 88, 0);
+    width: 138px;
+    background-color: rgb(255, 255, 255);
     border-left-color: rgba(255, 255, 255, 0);
     border-right-color: rgba(255, 255, 255, 0);
     border-top-color: rgba(255, 255, 255, 0);
     border-bottom-color: rgba(255, 255, 255, 0);
-    background-image: url('project://database/Assets/resourse/image/map/map_bt0.png?fileID=2800000&guid=3920404d92672e149bebefbbf329e7aa&type=3#map_bt0');
+    background-image: none;
     -unity-background-scale-mode: scale-to-fit;
     left: 1477px;
+    font-size: 19px;
+    color: rgb(80, 162, 128);
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    -unity-font-style: normal;
+    -unity-font-definition: none;
+    -unity-font: url('project://database/Assets/resourse/Fonts/PRETENDARD-BOLD.OTF?fileID=12800000&guid=dede1a53294dbc54c8e36a8051874787&type=3#PRETENDARD-BOLD');
+    align-items: stretch;
+    position: absolute;
+    margin-left: 7px;
 }
 
 .TopBt:active {
@@ -104,4 +116,35 @@
 .HomeBt:active {
     transition-duration: 0.1s;
     scale: 1.2 1.2;
+}
+
+.NextBt {
+    height: 243px;
+    width: 42px;
+    background-color: rgba(88, 88, 88, 0);
+    border-left-color: rgba(255, 255, 255, 0);
+    border-right-color: rgba(255, 255, 255, 0);
+    border-top-color: rgba(255, 255, 255, 0);
+    border-bottom-color: rgba(255, 255, 255, 0);
+    -unity-background-scale-mode: scale-to-fit;
+    transition-duration: 0.1s;
+}
+
+.NextBt:active {
+    scale: 1.2 1.2;
+    transition-duration: 0.1s;
+}
+
+.TopBt--un {
+    background-color: rgb(80, 162, 128);
+    color: rgb(255, 255, 255);
+}
+
+.NextBt--enable {
+    background-image: url('project://database/Assets/resourse/image/all%20answer/icon_1.png?fileID=2800000&guid=9482396d202ac764880b4ae4bf3d40dd&type=3#icon_1');
+    left: 1745px;
+    top: 398px;
+    position: absolute;
+    -unity-background-image-tint-color: rgba(171, 49, 74, 255);
+    transition-duration: 0.1s;
 }

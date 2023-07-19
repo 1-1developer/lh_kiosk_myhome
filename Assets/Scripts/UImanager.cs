@@ -12,6 +12,7 @@ public class UImanager : MonoBehaviour
     [SerializeField] ScreenMap m_MapModalScreen;
     [SerializeField] ScreenQuiz m_QuizModalScreen;
     [SerializeField] ScreenAnswers m_AnswersModalScreen;
+    [SerializeField] ScreenAllAnswer m_AllAnswersModalScreen;
 
     UIDocument m_MainMenuDocument;
     public UIDocument MainMenuDocument => m_MainMenuDocument;
@@ -27,6 +28,8 @@ public class UImanager : MonoBehaviour
             m_AllModalScreens.Add(m_QuizModalScreen);
         if (m_AnswersModalScreen != null)
             m_AllModalScreens.Add(m_AnswersModalScreen);
+        if (m_AllAnswersModalScreen != null)
+            m_AllModalScreens.Add(m_AllAnswersModalScreen);
     }
     void ShowModalScreen(MenuScreen modalScreen)
     {
@@ -52,7 +55,6 @@ public class UImanager : MonoBehaviour
     {
         ShowModalScreen(m_HomeModalScreen);
     }
-
     public void ShowMapScreen()
     {
         ShowModalScreen(m_MapModalScreen);
@@ -65,5 +67,9 @@ public class UImanager : MonoBehaviour
     public void ShowAnswersScreen()
     {
         ShowModalScreen(m_AnswersModalScreen);
+    }
+    public void ShowAllnswersScreen()
+    {
+        ShowModalScreen(m_AllAnswersModalScreen);
     }
 }

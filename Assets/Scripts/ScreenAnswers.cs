@@ -29,14 +29,17 @@ public class ScreenAnswers : MenuScreen
     }
     private void onHomeClicked(ClickEvent evt)
     {
+        AudioManager.PlayDefaultButtonSound();
         m_MainMenuUIManager.ShowHomeScreen();
     }
     void OnanswerBt0(ClickEvent evt)
     {
+        AudioManager.PlayDefaultButtonSound();
         m_MainMenuUIManager.ShowMapScreen();
     }
     void OnanswerBt1(ClickEvent evt)
     {
-        //전체유형보기
+        AudioManager.PlayDefaultButtonSound();
+        m_MainMenuUIManager.ShowAllnswersScreen();
     }
 }
