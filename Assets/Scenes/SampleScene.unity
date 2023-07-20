@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028305, g: 0.22571313, b: 0.3069213, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -337,7 +337,7 @@ MonoBehaviour:
   m_MainMenuUIManager: {fileID: 1072658636}
   m_Document: {fileID: 1072658634}
   charts:
-  - {fileID: 21300000, guid: 5279a2e51254f5340b7b36e0ebad119e, type: 3}
+  - {fileID: 21300000, guid: c277981df5b764de398657378192d858, type: 3}
   - {fileID: 21300000, guid: e4bef06c4fea3a34c8075d248638938b, type: 3}
   - {fileID: 21300000, guid: a322bc57979ff2e4bb5abf9d33a94e12, type: 3}
   - {fileID: 21300000, guid: 06010e6c7d681084e9e3790329b5c8b5, type: 3}
@@ -1882,7 +1882,7 @@ VideoPlayer:
   m_ControlledAudioTrackCount: 0
   m_PlayOnAwake: 1
   m_SkipOnDrop: 1
-  m_Looping: 0
+  m_Looping: 1
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
