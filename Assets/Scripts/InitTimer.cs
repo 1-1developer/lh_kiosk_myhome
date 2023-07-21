@@ -34,7 +34,6 @@ public class InitTimer : MonoBehaviour
         {
             uImanager.ShowHomeScreen();
             screenQuiz.initQuiz();
-            lineMover.initLine();
             isStart = false;
             timer = 0;
         }

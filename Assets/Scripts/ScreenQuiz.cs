@@ -12,6 +12,8 @@ public class ScreenQuiz : MenuScreen
     const string NO = "quiz_no1";
     const string Quiz = "quiz_q";
 
+    public Animator reckAnimator;
+
     public Sprite[] quizes;
 
     public Transform[] m_points;
@@ -80,18 +82,23 @@ public class ScreenQuiz : MenuScreen
         AudioManager.PlayDefaultButtonSound();
         m_MainMenuUIManager.ShowHomeScreen();
         initQuiz();
+        reckAnimator.SetInteger("ID", 99);
+
     }
     private void onYesClicked(ClickEvent evt)
     {
         AudioManager.PlayDefaultButtonSound();
+
         curAnswer += "y";
         ShowQuiz();
         findresult();
+
     }
 
     private void onNoClicked(ClickEvent evt)
     {
         AudioManager.PlayDefaultButtonSound();
+
         curAnswer += "n";
         ShowQuiz();
         findresult();
@@ -106,66 +113,9 @@ public class ScreenQuiz : MenuScreen
     {
         setQuiz(0);
         curAnswer = "";
-        lineMover.initLine();
+        reckAnimator.SetInteger("ID", 99);
     }
 
-    void drawLine(int index)
-    {
-        switch (index)
-        {
-            case 0:
-                lineMover.setRoute(route0);
-                break;
-            case 1:
-                lineMover.setRoute(route1);
-                break;
-            case 2:
-                lineMover.setRoute(route2);
-                break;
-            case 3:
-                lineMover.setRoute(route3);
-                break;
-            case 4:
-                lineMover.setRoute(route4);
-                break;
-            case 5:
-                lineMover.setRoute(route5);
-                break;
-            case 6:
-                lineMover.setRoute(route6);
-                break;
-            case 7:
-                lineMover.setRoute(route7);
-                break;
-            case 8:
-                lineMover.setRoute(route8);
-                break;
-            case 9:
-                lineMover.setRoute(route9);
-                break;
-            case 10:
-                lineMover.setRoute(route10);
-                break;
-            case 11:
-                lineMover.setRoute(route11);
-                break;
-            case 12:
-                lineMover.setRoute(route12);
-                break;
-            case 13:
-                lineMover.setRoute(route13);
-                break;
-            case 14:
-                lineMover.setRoute(route14);
-                break;
-            case 15:
-                lineMover.setRoute(route15);
-                break;
-
-            default:
-                break;
-        }
-    }
     void findresult()
     {
         for (int i = 0; i < s_Answers.Length; i++)
@@ -173,10 +123,15 @@ public class ScreenQuiz : MenuScreen
             if (curAnswer == s_Answers[i])
             {
                 showResult(i);
-                m_MainMenuUIManager.ShowAnswersScreen();
-                initQuiz();
+                Invoke("showre", 1.2f);
+                reckAnimator.SetInteger("ID", 30+i);
+                Invoke("initQuiz", 2f);
             }
         }
+    }
+    void showre()
+    {
+        m_MainMenuUIManager.ShowAnswersScreen();
     }
     void showResult(int i)
     {
@@ -202,7 +157,7 @@ public class ScreenQuiz : MenuScreen
                 setQuiz(i+1);
                 Debug.Log($"{i+1}¹ø¤Š");
                 Debug.Log($"{s_Qs[i]}");
-                drawLine(i);
+                reckAnimator.SetInteger("ID", i);
             }
         }
     }
@@ -232,5 +187,5 @@ public class ScreenQuiz : MenuScreen
         answers_Reorder.Add(answers[15]);//yyynny
         answers_Reorder.Add(answers[16]);//yyynnn
     }
-
+    
 }
