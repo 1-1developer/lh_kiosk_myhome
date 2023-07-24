@@ -123,9 +123,9 @@ public class ScreenQuiz : MenuScreen
             if (curAnswer == s_Answers[i])
             {
                 showResult(i);
-                Invoke("showre", 1.2f);
+                Invoke("showre", 2f);
                 reckAnimator.SetInteger("ID", 30+i);
-                Invoke("initQuiz", 2f);
+                Invoke("initQuiz", 3f);
             }
         }
     }
