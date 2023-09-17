@@ -12,30 +12,9 @@ public class ScreenQuiz : MenuScreen
     const string NO = "quiz_no1";
     const string Quiz = "quiz_q";
 
-    public Animator reckAnimator;
+    //public Animator reckAnimator; //사다리
 
     public Sprite[] quizes;
-
-    public Transform[] m_points;
-
-    public LineMover lineMover;
-
-    public Transform[] route0;
-    public Transform[] route1;
-    public Transform[] route2;
-    public Transform[] route3;
-    public Transform[] route4;
-    public Transform[] route5;
-    public Transform[] route6;
-    public Transform[] route7;
-    public Transform[] route8;
-    public Transform[] route9;
-    public Transform[] route10;
-    public Transform[] route11;
-    public Transform[] route12;
-    public Transform[] route13;
-    public Transform[] route14;
-    public Transform[] route15;
 
     VisualElement m_Quiz;
 
@@ -82,7 +61,7 @@ public class ScreenQuiz : MenuScreen
         AudioManager.PlayDefaultButtonSound();
         m_MainMenuUIManager.ShowHomeScreen();
         initQuiz();
-        reckAnimator.SetInteger("ID", 99);
+        //reckAnimator.SetInteger("ID", 99);
 
     }
     private void onYesClicked(ClickEvent evt)
@@ -113,7 +92,7 @@ public class ScreenQuiz : MenuScreen
     {
         setQuiz(0);
         curAnswer = "";
-        reckAnimator.SetInteger("ID", 99);
+        //reckAnimator.SetInteger("ID", 99);
     }
 
     void findresult()
@@ -123,9 +102,9 @@ public class ScreenQuiz : MenuScreen
             if (curAnswer == s_Answers[i])
             {
                 showResult(i);
-                Invoke("showre", 2f);
-                reckAnimator.SetInteger("ID", 30+i);
-                Invoke("initQuiz", 3f);
+                showre();
+                //reckAnimator.SetInteger("ID", 30+i);
+                ShowQuiz();
             }
         }
     }
@@ -157,7 +136,7 @@ public class ScreenQuiz : MenuScreen
                 setQuiz(i+1);
                 Debug.Log($"{i+1}번쨰");
                 Debug.Log($"{s_Qs[i]}");
-                reckAnimator.SetInteger("ID", i);
+                //reckAnimator.SetInteger("ID", i);
             }
         }
     }
