@@ -35,7 +35,7 @@ public class ScreenAnswers : MenuScreen
     void OnanswerBt0(ClickEvent evt)
     {
         AudioManager.PlayDefaultButtonSound();
-        m_MainMenuUIManager.ShowMapScreen();
+        m_MainMenuUIManager.ShowQuizScreen();
     }
     void OnanswerBt1(ClickEvent evt)
     {

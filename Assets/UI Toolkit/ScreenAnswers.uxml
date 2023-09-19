@@ -1,91 +1,41 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI%20Toolkit/Style_kiosk.uss?fileID=7433441132597879392&amp;guid=0ff8e7a0e3cc2794db172d5e1a6bae66&amp;type=3#Style_kiosk" />
     <ui:VisualElement name="answer1" style="position: absolute; width: 100%; height: 100%; display: flex;">
-        <ui:VisualElement name="answer_bg" style="width: 100%; height: 100%; background-color: rgb(255, 255, 255); background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_bg.png?fileID=2800000&amp;guid=e44365fb0a7a6c34f9a928e5bfe3674a&amp;type=3#answer_bg&apos;);">
-            <ui:VisualElement name="a" style="width: 100%; height: 100%; background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_1.png?fileID=2800000&amp;guid=76d55ffd69201d74e906c55a30bc3945&amp;type=3#answer_1&apos;);" />
+        <ui:VisualElement name="answer_bg" style="width: 100%; height: 100%; background-color: rgb(255, 255, 255); background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_bg.png?fileID=2800000&amp;guid=e44365fb0a7a6c34f9a928e5bfe3674a&amp;type=3#answer_bg&apos;); display: flex;">
+            <ui:VisualElement name="a" style="width: 1356px; height: 529px; background-image: url(&apos;project://database/Assets/resourse/image/answer/Group%20136.png?fileID=2800000&amp;guid=c03b5455528e14a4eae750d4c95250c4&amp;type=3#Group 136&apos;); display: flex; position: absolute; left: 281px; top: 204px;" />
         </ui:VisualElement>
     </ui:VisualElement>
-    <ui:VisualElement name="answer3" style="position: absolute; width: 100%; height: 100%; display: flex;">
+    <ui:VisualElement name="answer2" style="width: 100%; height: 100%; position: absolute; display: none;">
         <ui:VisualElement name="answer_bg" style="width: 100%; height: 100%; background-color: rgb(255, 255, 255); background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_bg.png?fileID=2800000&amp;guid=e44365fb0a7a6c34f9a928e5bfe3674a&amp;type=3#answer_bg&apos;);">
-            <ui:VisualElement name="a" style="width: 100%; height: 100%; background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_17.png?fileID=2800000&amp;guid=5b2f008809487e44088c98173d65d8af&amp;type=3#answer_17&apos;);" />
+            <ui:VisualElement name="a" style="width: 727px; height: 530px; background-image: url(&apos;project://database/Assets/resourse/image/answer/Group%20135.png?fileID=2800000&amp;guid=fffc9478c86fa614c9096cd40e30b85e&amp;type=3#Group 135&apos;); left: 596px; top: 203px;" />
         </ui:VisualElement>
     </ui:VisualElement>
-    <ui:VisualElement name="answer2" style="width: 100%; height: 100%; position: absolute; display: flex;">
+    <ui:VisualElement name="answer3" style="position: absolute; width: 100%; height: 100%; display: none;">
         <ui:VisualElement name="answer_bg" style="width: 100%; height: 100%; background-color: rgb(255, 255, 255); background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_bg.png?fileID=2800000&amp;guid=e44365fb0a7a6c34f9a928e5bfe3674a&amp;type=3#answer_bg&apos;);">
-            <ui:VisualElement name="a" style="width: 100%; height: 100%; background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_2.png?fileID=2800000&amp;guid=ecff9a5b3f950d542aeb920c00250b53&amp;type=3#answer_2&apos;);" />
+            <ui:VisualElement name="a" style="width: 831px; height: 524px; background-image: url(&apos;project://database/Assets/resourse/image/answer/Group%20132.png?fileID=2800000&amp;guid=0bbe3ab1f916c0e4092a4213286caceb&amp;type=3#Group 132&apos;); left: 544px; top: 209px; position: absolute;" />
         </ui:VisualElement>
     </ui:VisualElement>
-    <ui:VisualElement name="answer13" style="position: absolute; width: 100%; height: 100%; display: flex;">
+    <ui:VisualElement name="answer4" style="position: absolute; width: 100%; height: 100%; display: none;">
         <ui:VisualElement name="answer_bg" style="width: 100%; height: 100%; background-color: rgb(255, 255, 255); background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_bg.png?fileID=2800000&amp;guid=e44365fb0a7a6c34f9a928e5bfe3674a&amp;type=3#answer_bg&apos;);">
-            <ui:VisualElement name="a" style="width: 100%; height: 100%; background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_3.png?fileID=2800000&amp;guid=4cd6c6a97cb589049a753c2c5ffda91a&amp;type=3#answer_3&apos;);" />
+            <ui:VisualElement name="answ" style="width: 808px; height: 488px; background-image: url(&apos;project://database/Assets/resourse/image/answer/Group%20134.png?fileID=2800000&amp;guid=d7d5b2874da063048b935781a24ef198&amp;type=3#Group 134&apos;); display: flex; left: 555px; top: 206px; position: absolute;" />
         </ui:VisualElement>
     </ui:VisualElement>
-    <ui:VisualElement name="answer14" style="position: absolute; width: 100%; height: 100%; display: flex;">
+    <ui:VisualElement name="answer5" style="position: absolute; height: 100%; width: 100%; display: none;">
         <ui:VisualElement name="answer_bg" style="width: 100%; height: 100%; background-color: rgb(255, 255, 255); background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_bg.png?fileID=2800000&amp;guid=e44365fb0a7a6c34f9a928e5bfe3674a&amp;type=3#answer_bg&apos;);">
-            <ui:VisualElement name="a" style="width: 100%; height: 100%; background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_4.png?fileID=2800000&amp;guid=0dda8ac8124ca474599d9dc677ed7067&amp;type=3#answer_4&apos;);" />
+            <ui:VisualElement name="a" style="width: 808px; height: 485px; background-image: url(&apos;project://database/Assets/resourse/image/answer/Group%20130.png?fileID=2800000&amp;guid=813e671a9a448db40a4040924da4eb4e&amp;type=3#Group 130&apos;); left: 555px; top: 209px;" />
         </ui:VisualElement>
     </ui:VisualElement>
-    <ui:VisualElement name="answer15" style="position: absolute; width: 100%; height: 100%; display: flex;">
+    <ui:VisualElement name="answer6" style="position: absolute; width: 100%; height: 100%; display: none;">
         <ui:VisualElement name="answer_bg" style="width: 100%; height: 100%; background-color: rgb(255, 255, 255); background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_bg.png?fileID=2800000&amp;guid=e44365fb0a7a6c34f9a928e5bfe3674a&amp;type=3#answer_bg&apos;);">
-            <ui:VisualElement name="a" style="width: 100%; height: 100%; background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_5.png?fileID=2800000&amp;guid=dde38b58fd332f949ac8815287b10263&amp;type=3#answer_5&apos;);" />
+            <ui:VisualElement name="a" style="width: 1336px; height: 534px; background-image: url(&apos;project://database/Assets/resourse/image/answer/Group%20133.png?fileID=2800000&amp;guid=a8abb18704c4f6746add2ac6b5d1116e&amp;type=3#Group 133&apos;); left: 291px; top: 199px;" />
         </ui:VisualElement>
     </ui:VisualElement>
-    <ui:VisualElement name="answer10" style="position: absolute; width: 100%; height: 100%; display: flex;">
+    <ui:VisualElement name="answer7" style="position: absolute; width: 100%; height: 100%; display: none;">
         <ui:VisualElement name="answer_bg" style="width: 100%; height: 100%; background-color: rgb(255, 255, 255); background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_bg.png?fileID=2800000&amp;guid=e44365fb0a7a6c34f9a928e5bfe3674a&amp;type=3#answer_bg&apos;);">
-            <ui:VisualElement name="a" style="width: 100%; height: 100%; background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_6.png?fileID=2800000&amp;guid=844c89552f9289a4982a160b65d4c3fb&amp;type=3#answer_6&apos;);" />
+            <ui:VisualElement name="a" style="width: 1323px; height: 514px; background-image: url(&apos;project://database/Assets/resourse/image/answer/Group%20131.png?fileID=2800000&amp;guid=10224265cd1955c44a1aeced7e1785a4&amp;type=3#Group 131&apos;); left: 298px; top: 204px;" />
         </ui:VisualElement>
     </ui:VisualElement>
-    <ui:VisualElement name="answer11" style="position: absolute; width: 100%; height: 100%; display: flex;">
-        <ui:VisualElement name="answer_bg" style="width: 100%; height: 100%; background-color: rgb(255, 255, 255); background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_bg.png?fileID=2800000&amp;guid=e44365fb0a7a6c34f9a928e5bfe3674a&amp;type=3#answer_bg&apos;);">
-            <ui:VisualElement name="a" style="width: 100%; height: 100%; background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_7.png?fileID=2800000&amp;guid=b9de42ece8d6e1e4b980ddfabe7cef3c&amp;type=3#answer_7&apos;);" />
-        </ui:VisualElement>
-    </ui:VisualElement>
-    <ui:VisualElement name="answer12" style="position: absolute; width: 100%; height: 100%; display: flex;">
-        <ui:VisualElement name="answer_bg" style="width: 100%; height: 100%; background-color: rgb(255, 255, 255); background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_bg.png?fileID=2800000&amp;guid=e44365fb0a7a6c34f9a928e5bfe3674a&amp;type=3#answer_bg&apos;);">
-            <ui:VisualElement name="a" style="width: 100%; height: 100%; background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_8.png?fileID=2800000&amp;guid=198afb984a7d4ff4c95ffc31bea3eb53&amp;type=3#answer_8&apos;);" />
-        </ui:VisualElement>
-    </ui:VisualElement>
-    <ui:VisualElement name="answer7" style="position: absolute; width: 100%; height: 100%; display: flex;">
-        <ui:VisualElement name="answer_bg" style="width: 100%; height: 100%; background-color: rgb(255, 255, 255); background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_bg.png?fileID=2800000&amp;guid=e44365fb0a7a6c34f9a928e5bfe3674a&amp;type=3#answer_bg&apos;);">
-            <ui:VisualElement name="a" style="width: 100%; height: 100%; background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_9.png?fileID=2800000&amp;guid=64f0b5d30d8b97544acd3adda3c2ad34&amp;type=3#answer_9&apos;);" />
-        </ui:VisualElement>
-    </ui:VisualElement>
-    <ui:VisualElement name="answer8" style="position: absolute; width: 100%; height: 100%; display: flex;">
-        <ui:VisualElement name="answer_bg" style="width: 100%; height: 100%; background-color: rgb(255, 255, 255); background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_bg.png?fileID=2800000&amp;guid=e44365fb0a7a6c34f9a928e5bfe3674a&amp;type=3#answer_bg&apos;);">
-            <ui:VisualElement name="a" style="width: 100%; height: 100%; background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_10.png?fileID=2800000&amp;guid=d8b5f7dce46d98e43ba0ba404eb7a749&amp;type=3#answer_10&apos;);" />
-        </ui:VisualElement>
-    </ui:VisualElement>
-    <ui:VisualElement name="answer9" style="position: absolute; width: 100%; height: 100%; display: flex;">
-        <ui:VisualElement name="answer_bg" style="width: 100%; height: 100%; background-color: rgb(255, 255, 255); background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_bg.png?fileID=2800000&amp;guid=e44365fb0a7a6c34f9a928e5bfe3674a&amp;type=3#answer_bg&apos;);">
-            <ui:VisualElement name="a" style="width: 100%; height: 100%; background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_11.png?fileID=2800000&amp;guid=34a05967269a3d3469b568ccf2d4d887&amp;type=3#answer_11&apos;);" />
-        </ui:VisualElement>
-    </ui:VisualElement>
-    <ui:VisualElement name="answer6" style="position: absolute; width: 100%; height: 100%; display: flex;">
-        <ui:VisualElement name="answer_bg" style="width: 100%; height: 100%; background-color: rgb(255, 255, 255); background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_bg.png?fileID=2800000&amp;guid=e44365fb0a7a6c34f9a928e5bfe3674a&amp;type=3#answer_bg&apos;);">
-            <ui:VisualElement name="a" style="width: 100%; height: 100%; background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_12.png?fileID=2800000&amp;guid=3a81422ba5a5b5741828cf71f30c147d&amp;type=3#answer_12&apos;);" />
-        </ui:VisualElement>
-    </ui:VisualElement>
-    <ui:VisualElement name="answer5" style="position: absolute; height: 100%; width: 100%; display: flex;">
-        <ui:VisualElement name="answer_bg" style="width: 100%; height: 100%; background-color: rgb(255, 255, 255); background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_bg.png?fileID=2800000&amp;guid=e44365fb0a7a6c34f9a928e5bfe3674a&amp;type=3#answer_bg&apos;);">
-            <ui:VisualElement name="a" style="width: 100%; height: 100%; background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_13.png?fileID=2800000&amp;guid=24720f3467edfab44baba324b5c0e662&amp;type=3#answer_13&apos;);" />
-        </ui:VisualElement>
-    </ui:VisualElement>
-    <ui:VisualElement name="answer4" style="position: absolute; width: 100%; height: 100%; display: flex;">
-        <ui:VisualElement name="answer_bg" style="width: 100%; height: 100%; background-color: rgb(255, 255, 255); background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_bg.png?fileID=2800000&amp;guid=e44365fb0a7a6c34f9a928e5bfe3674a&amp;type=3#answer_bg&apos;);">
-            <ui:VisualElement name="answ" style="width: 100%; height: 100%; background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_14.png?fileID=2800000&amp;guid=5fde7858bab1c424e82bcf9f35331660&amp;type=3#answer_14&apos;); display: flex;" />
-        </ui:VisualElement>
-    </ui:VisualElement>
-    <ui:VisualElement name="answer16" style="position: absolute; width: 100%; height: 100%; display: none;">
-        <ui:VisualElement name="answer_bg" style="width: 100%; height: 100%; background-color: rgb(255, 255, 255); background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_bg.png?fileID=2800000&amp;guid=e44365fb0a7a6c34f9a928e5bfe3674a&amp;type=3#answer_bg&apos;);">
-            <ui:VisualElement name="a" style="width: 100%; height: 100%; background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_15.png?fileID=2800000&amp;guid=4d0b878e5530bbe43b6d5d2a7c1caac9&amp;type=3#answer_15&apos;);" />
-        </ui:VisualElement>
-    </ui:VisualElement>
-    <ui:VisualElement name="answer17" style="position: absolute; width: 100%; height: 100%; display: none;">
-        <ui:VisualElement name="answer_bg" style="width: 100%; height: 100%; background-color: rgb(255, 255, 255); background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_bg.png?fileID=2800000&amp;guid=e44365fb0a7a6c34f9a928e5bfe3674a&amp;type=3#answer_bg&apos;);">
-            <ui:VisualElement name="a" style="width: 100%; height: 100%; background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_16.png?fileID=2800000&amp;guid=9b28d219b3e98cf4f9381127ab56f8a8&amp;type=3#answer_16&apos;);" />
-        </ui:VisualElement>
-    </ui:VisualElement>
-    <ui:Button display-tooltip-when-elided="true" name="answer_bt0" style="width: 494px; height: 145px; background-color: rgba(88, 88, 88, 0); border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); background-image: url(&apos;project://database/Assets/resourse/image/answer/Group%20144.png?fileID=2800000&amp;guid=c91c5efa80b04684080114c96fe8714a&amp;type=3#Group 144&apos;); -unity-background-scale-mode: scale-to-fit; position: absolute; top: 776px; left: 432px;" />
-    <ui:Button display-tooltip-when-elided="true" name="answer_bt1" style="width: 494px; height: 145px; background-color: rgba(88, 88, 88, 0); border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_bt1.png?fileID=2800000&amp;guid=270d707b4aae1ed40a62bd7c42a046d9&amp;type=3#answer_bt1&apos;); -unity-background-scale-mode: scale-to-fit; position: absolute; top: 776px; left: 997px;" />
-    <ui:Button display-tooltip-when-elided="true" name="answer_backbg" class="HomeBt" style="height: 120px; width: 120px; left: 1775px; top: 20px; background-color: rgba(88, 88, 88, 0); border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_backbt.png?fileID=2800000&amp;guid=93da88e123fdd5f40ad02f3827a4faf1&amp;type=3#answer_backbt&apos;);" />
+    <ui:Button display-tooltip-when-elided="true" name="answer_bt0" style="width: 442px; height: 132px; background-color: rgba(88, 88, 88, 0); border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_bt0.png?fileID=2800000&amp;guid=052273ac4e1912e459c89c293682fe31&amp;type=3#answer_bt0&apos;); -unity-background-scale-mode: scale-to-fit; position: absolute; top: 789px; left: 507px;" />
+    <ui:Button display-tooltip-when-elided="true" name="answer_bt1" style="width: 442px; height: 132px; background-color: rgba(88, 88, 88, 0); border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_bt1.png?fileID=2800000&amp;guid=270d707b4aae1ed40a62bd7c42a046d9&amp;type=3#answer_bt1&apos;); -unity-background-scale-mode: scale-to-fit; position: absolute; top: 789px; left: 996px;" />
+    <ui:Button display-tooltip-when-elided="true" name="answer_backbg" class="HomeBt" style="height: 85px; width: 85px; left: 1804px; top: 27px; background-color: rgba(88, 88, 88, 0); border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_backbt.png?fileID=2800000&amp;guid=93da88e123fdd5f40ad02f3827a4faf1&amp;type=3#answer_backbt&apos;); display: flex;" />
 </ui:UXML>

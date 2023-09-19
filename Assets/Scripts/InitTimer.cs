@@ -33,7 +33,7 @@ public class InitTimer : MonoBehaviour
         if(isStart && timer > MaxTime)
         {
             uImanager.ShowHomeScreen();
-            screenQuiz.initQuiz();
+            screenQuiz.InitQuiz();
             isStart = false;
             timer = 0;
         }
