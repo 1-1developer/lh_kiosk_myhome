@@ -1,6 +1,8 @@
+//using FigmaImporter.Editor;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -10,6 +12,7 @@ public class ScreenMap : MenuScreen
     const string MAPBT = "map_bt";
     const string MAPCHARTBOX = "MapchartBox";
     const string MAPCHART = "map_chart";
+    const string MAPCHART2 = "map_chart2";
     const string DATABOX = "DataBox";
     const string DATAE = "DataElement";
     const string DATACLOSEBT = "DataCloseBt";
@@ -18,13 +21,17 @@ public class ScreenMap : MenuScreen
 
 
     public Sprite[] charts;
-    public Sprite[] DataWay;
-    public Sprite[] DataPrice;
+    public Sprite[] DataNew;
+    public Sprite[] DataBefore;
+    public Sprite[] dataButtonAOnOff;
+    public Sprite[] dataButtonBOnOff;
+
 
 
 
     VisualElement m_MapchartBox;//버튼까지 포함된그.
     VisualElement m_Mapchart;//이미지 교체되는 엘리먼트
+    VisualElement m_Mapchart2;//이미지 교체되는 엘리먼트
     VisualElement m_DataBox;
     VisualElement m_DataE;//이미지 교체되는 엘리먼트
 
@@ -52,16 +59,17 @@ public class ScreenMap : MenuScreen
 
         m_MapchartBox = m_Root.Q<VisualElement>(MAPCHARTBOX);
         m_Mapchart = m_Root.Q<VisualElement>(MAPCHART);
+        m_Mapchart2 = m_Root.Q<VisualElement>(MAPCHART2);
         m_DataBox = m_Root.Q<VisualElement>(DATABOX);
         m_DataE = m_Root.Q<VisualElement>(DATAE);
 
-        m_dataBTa = m_Root.Q<Button>(MAPBT + "5");
-        m_dataBTb= m_Root.Q<Button>(MAPBT + "4");
+        m_dataBTa = m_Root.Q<Button>(MAPBT + "4");
+        m_dataBTb= m_Root.Q<Button>(MAPBT + "5");
         m_dataCloseBt = m_Root.Q<Button>(DATACLOSEBT);
 
         m_homeBt = m_Root.Q<Button>("btHome_Map");
 
-        for (int i = 0; i < 19; i++)
+        for (int i = 0; i < 20; i++)
         {
             m_Pointers.Add(m_Root.Q<Button>(MAPPOINT + $"{i}"));
         }
@@ -98,6 +106,7 @@ public class ScreenMap : MenuScreen
         m_Pointers[16].RegisterCallback<ClickEvent>(evt => OnPointerClicked(16));
         m_Pointers[17].RegisterCallback<ClickEvent>(evt => OnPointerClicked(17));
         m_Pointers[18].RegisterCallback<ClickEvent>(evt => OnPointerClicked(18));
+        m_Pointers[19].RegisterCallback<ClickEvent>(evt => OnPointerClicked(19));
 
 
         m_homeBt.RegisterCallback<ClickEvent>(OnHomeClicked);
@@ -106,7 +115,8 @@ public class ScreenMap : MenuScreen
     private void OnHomeClicked(ClickEvent evt)
     {
         AudioManager.PlayDefaultButtonSound();
-        m_MainMenuUIManager.ShowHomeScreen();
+        InitMap();
+        m_MainMenuUIManager.ShowHomeScreen(); 
     }
 
     private void OnCloseClicked(ClickEvent evt)
@@ -122,9 +132,9 @@ public class ScreenMap : MenuScreen
         AudioManager.PlayDefaultButtonSound();
         topindex = index;
         showPointG(m_pointGroups[topindex]);
-        m_Mapchart.style.backgroundImage = charts[topindex + 1].texture;
-        m_DataBox.style.display = DisplayStyle.None;
-        m_MapchartBox.style.display = DisplayStyle.Flex;
+
+        InitChartDisplay();
+        m_Mapchart.style.backgroundImage = charts[topindex].texture;
     }
 
     void OnPointerClicked(int index)
@@ -135,10 +145,10 @@ public class ScreenMap : MenuScreen
         switch (Dataindex)
         {
             case 0:
-                m_DataE.style.backgroundImage = DataWay[index].texture;
+                m_DataE.style.backgroundImage = DataNew[index].texture;
                 break;
             case 1:
-                m_DataE.style.backgroundImage = DataPrice[index].texture;
+                m_DataE.style.backgroundImage = DataBefore[index].texture;
                 break;
             default:
                 break;
@@ -153,10 +163,16 @@ public class ScreenMap : MenuScreen
         switch (index)
         {
             case 0:
-                m_Mapchart.style.backgroundImage = charts[0].texture;
+                m_Mapchart.style.display = DisplayStyle.Flex;
+                m_Mapchart2.style.display = DisplayStyle.None;
+                m_Mapchart.style.backgroundImage = charts[topindex].texture;
+                DataButtonsClicked(Dataindex);
+                //m_Mapchart.style.backgroundImage = charts[0].texture;                
                 break;
             case 1:
-                m_Mapchart.style.backgroundImage = charts[topindex+1].texture;
+                m_Mapchart2.style.display = DisplayStyle.Flex;
+                m_Mapchart.style.display = DisplayStyle.None;
+                DataButtonsClicked(Dataindex);
                 break;
             default:
                 break;
@@ -187,5 +203,35 @@ public class ScreenMap : MenuScreen
             else
                 b.AddToClassList("TopBt--un");
         }
+    }
+
+    void InitChartDisplay()
+    {
+        Dataindex = 0;
+
+        // 팝업창 닫기
+        m_DataBox.style.display = DisplayStyle.None;
+        m_MapchartBox.style.display = DisplayStyle.Flex;
+
+        //표 차트 띄우기
+        m_Mapchart.style.display = DisplayStyle.Flex;
+        m_Mapchart2.style.display = DisplayStyle.None;
+        //m_Mapchart.style.backgroundImage = charts[0].texture;
+        DataButtonsClicked(0);
+
+    }
+
+    void DataButtonsClicked(int v)
+    {
+        m_dataBTa.style.backgroundImage = dataButtonAOnOff[v].texture;
+        m_dataBTb.style.backgroundImage = dataButtonBOnOff[v].texture;
+    }
+
+        public void InitMap()
+    {        
+        StyleTopBt(0);
+        showPointG(m_pointGroups[0]);
+        m_Mapchart.style.backgroundImage = charts[0].texture;
+        InitChartDisplay(); 
     }
 }

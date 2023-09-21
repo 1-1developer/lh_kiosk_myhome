@@ -17,6 +17,10 @@ public class InitTimer : MonoBehaviour
 
     [SerializeField]
     ScreenQuiz screenQuiz;
+
+    [SerializeField]
+    ScreenMap screenMap;
+
     void Start()
     {
         
@@ -33,6 +37,7 @@ public class InitTimer : MonoBehaviour
         if(isStart && timer > MaxTime)
         {
             uImanager.ShowHomeScreen();
+            screenMap.InitMap();
             screenQuiz.InitQuiz();
             isStart = false;
             timer = 0;

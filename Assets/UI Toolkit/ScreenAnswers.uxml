@@ -2,37 +2,37 @@
     <Style src="project://database/Assets/UI%20Toolkit/Style_kiosk.uss?fileID=7433441132597879392&amp;guid=0ff8e7a0e3cc2794db172d5e1a6bae66&amp;type=3#Style_kiosk" />
     <ui:VisualElement name="answer1" style="position: absolute; width: 100%; height: 100%; display: flex;">
         <ui:VisualElement name="answer_bg" style="width: 100%; height: 100%; background-color: rgb(255, 255, 255); background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_bg.png?fileID=2800000&amp;guid=e44365fb0a7a6c34f9a928e5bfe3674a&amp;type=3#answer_bg&apos;); display: flex;">
-            <ui:VisualElement name="a" style="width: 1356px; height: 529px; background-image: url(&apos;project://database/Assets/resourse/image/answer/Group%20136.png?fileID=2800000&amp;guid=c03b5455528e14a4eae750d4c95250c4&amp;type=3#Group 136&apos;); display: flex; position: absolute; left: 281px; top: 204px;" />
+            <ui:VisualElement name="a" style="width: 1212px; height: 606px; background-image: url(&apos;project://database/Assets/resourse/image/answer/Group%20538%20(1).png?fileID=2800000&amp;guid=75cfb7be64323ed449f9e7d4fce10307&amp;type=3#Group 538 (1)&apos;); display: flex; position: absolute; left: 351px; top: 170px; -unity-background-scale-mode: scale-to-fit;" />
         </ui:VisualElement>
     </ui:VisualElement>
     <ui:VisualElement name="answer2" style="width: 100%; height: 100%; position: absolute; display: none;">
         <ui:VisualElement name="answer_bg" style="width: 100%; height: 100%; background-color: rgb(255, 255, 255); background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_bg.png?fileID=2800000&amp;guid=e44365fb0a7a6c34f9a928e5bfe3674a&amp;type=3#answer_bg&apos;);">
-            <ui:VisualElement name="a" style="width: 727px; height: 530px; background-image: url(&apos;project://database/Assets/resourse/image/answer/Group%20135.png?fileID=2800000&amp;guid=fffc9478c86fa614c9096cd40e30b85e&amp;type=3#Group 135&apos;); left: 596px; top: 203px;" />
+            <ui:VisualElement name="a" style="width: 1212px; height: 557px; background-image: url(&apos;project://database/Assets/resourse/image/answer/Group%20541%20(1).png?fileID=2800000&amp;guid=69754687b0eaacb40aed3f9ac12f014f&amp;type=3#Group 541 (1)&apos;); left: 351px; top: 203px;" />
         </ui:VisualElement>
     </ui:VisualElement>
     <ui:VisualElement name="answer3" style="position: absolute; width: 100%; height: 100%; display: none;">
         <ui:VisualElement name="answer_bg" style="width: 100%; height: 100%; background-color: rgb(255, 255, 255); background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_bg.png?fileID=2800000&amp;guid=e44365fb0a7a6c34f9a928e5bfe3674a&amp;type=3#answer_bg&apos;);">
-            <ui:VisualElement name="a" style="width: 831px; height: 524px; background-image: url(&apos;project://database/Assets/resourse/image/answer/Group%20132.png?fileID=2800000&amp;guid=0bbe3ab1f916c0e4092a4213286caceb&amp;type=3#Group 132&apos;); left: 544px; top: 209px; position: absolute;" />
+            <ui:VisualElement name="a" style="width: 1212px; height: 551px; background-image: url(&apos;project://database/Assets/resourse/image/answer/Group%20540%20(1).png?fileID=2800000&amp;guid=ad0c60458acb37b45a9a17b6cd766aff&amp;type=3#Group 540 (1)&apos;); left: 351px; top: 209px; position: absolute;" />
         </ui:VisualElement>
     </ui:VisualElement>
     <ui:VisualElement name="answer4" style="position: absolute; width: 100%; height: 100%; display: none;">
         <ui:VisualElement name="answer_bg" style="width: 100%; height: 100%; background-color: rgb(255, 255, 255); background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_bg.png?fileID=2800000&amp;guid=e44365fb0a7a6c34f9a928e5bfe3674a&amp;type=3#answer_bg&apos;);">
-            <ui:VisualElement name="answ" style="width: 808px; height: 488px; background-image: url(&apos;project://database/Assets/resourse/image/answer/Group%20134.png?fileID=2800000&amp;guid=d7d5b2874da063048b935781a24ef198&amp;type=3#Group 134&apos;); display: flex; left: 555px; top: 206px; position: absolute;" />
+            <ui:VisualElement name="answ" style="width: 1212px; height: 554px; background-image: url(&apos;project://database/Assets/resourse/image/answer/Group%20539%20(1).png?fileID=2800000&amp;guid=8224be8cc171a3c4294fa47dc0df546f&amp;type=3#Group 539 (1)&apos;); display: flex; left: 351px; top: 206px; position: absolute;" />
         </ui:VisualElement>
     </ui:VisualElement>
     <ui:VisualElement name="answer5" style="position: absolute; height: 100%; width: 100%; display: none;">
         <ui:VisualElement name="answer_bg" style="width: 100%; height: 100%; background-color: rgb(255, 255, 255); background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_bg.png?fileID=2800000&amp;guid=e44365fb0a7a6c34f9a928e5bfe3674a&amp;type=3#answer_bg&apos;);">
-            <ui:VisualElement name="a" style="width: 808px; height: 485px; background-image: url(&apos;project://database/Assets/resourse/image/answer/Group%20130.png?fileID=2800000&amp;guid=813e671a9a448db40a4040924da4eb4e&amp;type=3#Group 130&apos;); left: 555px; top: 209px;" />
+            <ui:VisualElement name="a" style="width: 1212px; height: 551px; background-image: url(&apos;project://database/Assets/resourse/image/answer/Group%20542%20(1).png?fileID=2800000&amp;guid=ce49654d98d29da4591df013c97bb560&amp;type=3#Group 542 (1)&apos;); left: 351px; top: 209px;" />
         </ui:VisualElement>
     </ui:VisualElement>
     <ui:VisualElement name="answer6" style="position: absolute; width: 100%; height: 100%; display: none;">
         <ui:VisualElement name="answer_bg" style="width: 100%; height: 100%; background-color: rgb(255, 255, 255); background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_bg.png?fileID=2800000&amp;guid=e44365fb0a7a6c34f9a928e5bfe3674a&amp;type=3#answer_bg&apos;);">
-            <ui:VisualElement name="a" style="width: 1336px; height: 534px; background-image: url(&apos;project://database/Assets/resourse/image/answer/Group%20133.png?fileID=2800000&amp;guid=a8abb18704c4f6746add2ac6b5d1116e&amp;type=3#Group 133&apos;); left: 291px; top: 199px;" />
+            <ui:VisualElement name="a" style="width: 1212px; height: 561px; background-image: url(&apos;project://database/Assets/resourse/image/answer/Group%20543%20(1).png?fileID=2800000&amp;guid=3eb91287285f7f2408804c9fd9b7d424&amp;type=3#Group 543 (1)&apos;); left: 351px; top: 199px;" />
         </ui:VisualElement>
     </ui:VisualElement>
     <ui:VisualElement name="answer7" style="position: absolute; width: 100%; height: 100%; display: none;">
         <ui:VisualElement name="answer_bg" style="width: 100%; height: 100%; background-color: rgb(255, 255, 255); background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_bg.png?fileID=2800000&amp;guid=e44365fb0a7a6c34f9a928e5bfe3674a&amp;type=3#answer_bg&apos;);">
-            <ui:VisualElement name="a" style="width: 1323px; height: 514px; background-image: url(&apos;project://database/Assets/resourse/image/answer/Group%20131.png?fileID=2800000&amp;guid=10224265cd1955c44a1aeced7e1785a4&amp;type=3#Group 131&apos;); left: 298px; top: 204px;" />
+            <ui:VisualElement name="a" style="width: 541px; height: 497px; background-image: url(&apos;project://database/Assets/resourse/image/answer/Group%20544%20(1).png?fileID=2800000&amp;guid=b8fc5751285045a4ba4a5d12d2008ed0&amp;type=3#Group 544 (1)&apos;); left: 689px; top: 204px;" />
         </ui:VisualElement>
     </ui:VisualElement>
     <ui:Button display-tooltip-when-elided="true" name="answer_bt0" style="width: 442px; height: 132px; background-color: rgba(88, 88, 88, 0); border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); background-image: url(&apos;project://database/Assets/resourse/image/answer/answer_bt0.png?fileID=2800000&amp;guid=052273ac4e1912e459c89c293682fe31&amp;type=3#answer_bt0&apos;); -unity-background-scale-mode: scale-to-fit; position: absolute; top: 789px; left: 507px;" />
